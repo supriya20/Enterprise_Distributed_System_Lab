@@ -27,7 +27,9 @@ for elt, items in groupby(list1, itemgetter(0)):
     j = 0
     list2 =[]
 newlist = sorted(list3, key=lambda n: n['count'], reverse= True) 
+
 print ("\"pid\",\"laddr\",\"raddr\",\"status\"")
+
 for k in newlist:
     for m in k["conn"]:
         print str(m).strip('[]')
